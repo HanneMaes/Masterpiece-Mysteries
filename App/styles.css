@@ -1,0 +1,46 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: rgb(123, 193, 197);
+}
+
+.panel {
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+}
+
+.detail, .artwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail img, .artwork img {
+    border-radius: 20px;
+    box-shadow: 0px 30px 70px rgb(0, 0, 0, 0.25);
+}
+
+/**********/
+/* detail */
+/**********/
+
+.detail img {
+    width: 200px;
+    height: 200px;
+}
+
+/***********/
+/* artwork */
+/***********/
+
+.artwork img {
+    max-width: 95%;
+    max-height: 95%;
+}
