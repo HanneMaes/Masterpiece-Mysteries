@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Let browser know website is optimized for mobile -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <title>Vincent van Gogh</title>
+
+  <!-- custom browser header color -->
+  <meta name="theme-color" content="#000000">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- css librariesraries -->
+  <link rel="stylesheet" href="libraries/aos.css">
+
+  <!-- meta name="author" content="Hanne Maes">
+  <meta name="description" content="Hanne Maes Portfolio">
+  <meta name="keywords" content="Hanne Maes Portfolio Cryptoart Streetart Crypto Street Art Design Creative Code">
+  <meta property="og:site_name" content="Hanne Maes">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hanne Maes">
+  <meta property="og:description" content="Hanne Maes Portfolio" -->
+
+  <!-- favicon created with https://favicon.io/ -->
+  <!-- link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest" -->
+
+  <!-- favicon for firefox -->
+  <!-- link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" -->
+  
+  <!-- favicons for github pages -->
+  <!-- link rel="shortcut icon" type="image/x-icon" href="favicon.ico" -->
+
+</head>
+<body>
+
+    <!-- detail -->
+    <div class="panel detail" data-aos="fade-down" data-aos-delay="1000">
+        <img src="images/Vincent van Gogh/01.png">
+    </div>
+    
+    <!-- artwork -->
+    <div class="panel artwork"  data-aos="fade-up">
+        <img id="artworkImage" src="images/Vincent van Gogh/Bedroom in Arles.png">
+    </div>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+    <script src="libraries/aos.js"></script>
+    <script>
+    AOS.init({
+        // Global settings:
+        // disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        // startEvent: 'DOMimagesLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        // initClassName: 'aos-init', // class applied after initialization
+        // animatedClassName: 'aos-animate', // class applied on animation
+        // useClassNames: false, // if true, will add images of `data-aos` as classes on scroll
+        // disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        // debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        // throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        // offset: 120, // offset (in px) from the original trigger point
+        // delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1200, // values from 0 to 3000, with step 50ms
+        // easing: 'ease', // default easing for AOS animations
+        // once: false, // whether animation should happen only once - while scrolling down
+        // mirror: false, // whether elements should animate out while scrolling past them
+        // anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+    </script>
+
+</body>
+</html>
