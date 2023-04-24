@@ -1,6 +1,13 @@
-body {
+@font-face {
+    font-family: "default";
+    src: url("fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+}
+
+html, body {
     width: 100vw;
     height: 100vh;
+
+    padding: 0;
     margin: 0;
 
     display: flex;
@@ -8,38 +15,64 @@ body {
     justify-content: center;
     align-items: center;
 
+    font-family: "default";
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.5);
     background-color: #66ba81;
 }
 
-.panel {
-    width: 100%;
-    height: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+small {
+    font-weight: 500;
 }
 
-.detail img, .artwork img {
-    border-radius: 20px;
+.panel {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.panel.artwork { 
+    align-items: end;    
+}
+.panel.detail  { 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;
+    margin: 30px;
 }
 
 .detail img {
-    width: 200px;
-    height: 200px;
+    border-radius: 20px;
+    width:  400px;
+    height: 400px;
+    max-width:  100px; 
+    max-height: 100px;
+
+    border: 5px solid rgba(0, 0, 0, 0.5);
 }
 
 .artwork img {
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 100%;
+    max-height: 100%;
+
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 0px;
 }
 
-/*****************/
-/* Media queries */
-/*****************/
+/*************/
+/* landscape */
+/*************/
 
 @media (orientation: landscape) {
     body {
         flex-direction: row;
+        width: 100%;
+    }
+    .artwork img {
+        border-top: 0px;
+        border-left: 5px solid rgba(0, 0, 0, 0.5);  
     }
 }
