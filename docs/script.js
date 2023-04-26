@@ -1,14 +1,20 @@
+////////////////////////////////////////////////////////////////////////////////
+// SETTINGS
+////////////////////////////////////////////////////////////////////////////////
+
 const debugMode = false;
 
-const paintingWidth = 1300;
-const paintingHeight = 1021
-const hiddenButtonX1 = 527;
-const hiddenButtonY1 = 15;
-const hiddenButtonX2 = 729;
-const hiddenButtonY2 = 208;
+const data = [
+    { id1: 100, id2: 200, "tag with spaces": 300 },
+    { id1: 100, id2: 200, "tag with spaces": 300}
+]
+
+////////////////////////////////////////////////////////////////////////////////
+// MAIN
+////////////////////////////////////////////////////////////////////////////////
 
 window.onload = function () {
-
+/*
     // Get the artwork div element
     const artworkDiv = document.querySelector('.artwork');
 
@@ -43,5 +49,35 @@ window.onload = function () {
     });
 
     // Append the black square to the artwork div
-    artworkDiv.appendChild(hiddenButton);
+    artworkDiv.appendChild(hiddenButton); */
+
+    var artist = "Vincent van Gogh";
+    var artwork = "Bedroom in Arles";
+    var image = "Vincent van Gogh/Bedroom in Arles.png";
+    var detail = "Vincent van Gogh/01.png";
+
+    createPage(image, detail, artist, artwork);
 };
+
+////////////////////////////////////////////////////////////////////////////////
+// FUNCTIONS
+////////////////////////////////////////////////////////////////////////////////
+
+function createPage(img, det, arti, artw) {
+    document.getElementsByTagName('body')[0].innerHTML = `
+        <!-- detail -->
+        <div class="panel detail" data-aos="fade-down" data-aos-delay="1000">
+            <div>
+                ` + artw + `<br>
+                <small>` + arti + `</small>
+            </div>
+            <img src="images/` + det + `">
+            <div></div>
+        </div>
+        
+        <!-- artwork -->
+        <div class="panel artwork"  data-aos="fade-up">
+            <img id="artworkImage" src="images/` + img + `">
+    </div>
+    `; 
+}

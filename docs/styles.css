@@ -4,16 +4,8 @@
 }
 
 html, body {
-    width: 100vw;
-    height: 100vh;
-
     padding: 0;
     margin: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     font-family: "default";
     font-size: 20px;
@@ -23,6 +15,16 @@ html, body {
 
     color: rgba(0, 0, 0, 0.5);
     background-color: #66ba81;
+}
+
+.generatedPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
 }
 
 small {
